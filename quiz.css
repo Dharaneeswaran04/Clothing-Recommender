@@ -1,0 +1,102 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set font globally to Lucida Sans */
+html, body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    line-height: 1.6;
+    background-color:rgb(213, 219, 194);
+}
+
+/* Navigation Bar - Sticky Header */
+header {
+    background-color: rgb(9, 45, 9);
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Quiz Container */
+.quiz-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0; /* Removed padding */
+    background-color: rgb(213, 219, 194);
+}
+
+
+.quiz-container h1 {
+    text-align: center;
+    color: rgb(9, 45, 9);
+    margin-bottom: 20px;
+}
+
+.quiz-question {
+    margin-bottom: 20px;
+}
+
+.quiz-question label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.quiz-question select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.quiz-submit {
+    text-align: center;
+}
+
+.quiz-submit button {
+    background-color: rgb(9, 45, 9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-submit button:hover {
+    background-color: rgb(9, 45, 9);
+}
+
+/* Footer */
+footer {
+    background-color: rgb(9, 45, 9);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleNarrative</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <img src="1.png" width="60px" height="40px" alt="Logo">
+            <div class="logo">StyleNarrative</div>
+        </nav>
+    </header>
+
+    <!-- Main Quiz Section -->
+    <main>
+        <div class="quiz-container">
+            <h1>Find Your Style Fit 👔👗</h1>
+            <form id="beauty">
+                <!-- Question 1 -->
+                <div class="quiz-question">
+                    <label for="gender"><b>1. Which gender do you belong to?</b></label>
+                    <select id="gender" name="gender">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="Male">Male ♂️</option>
+                        <option value="Female">Female ♀️</option>
+                    </select>
+                </div>
+    
+                <!-- Question 2 -->
+                <div class="quiz-question">
+                    <label for="age"><b>2. What is your Age Group?</b></label>
+                    <select id="age" name="age">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="Teenager (13-19)">Teenager (13-19)</option>
+                        <option value="Young Adult (20-29)">Young Adult (20–29)</option>
+                        <option value="Adult (30-50)">Adult (30–50)</option>
+                        <option value="Mature(50+)">Mature (50+)</option>
+                    </select>
+                </div>
+    
+                <!-- Question 3 -->
+                <div class="quiz-question">
+                    <label for="skin-color"><b>3. What best describes your skin color?</b></label>
+                    <select id="skin-color" name="skin-color">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="Fair">Fair✊🏻</option>
+                        <option value="Light">Light✊🏼</option>
+                        <option value="Medium/Olive">Medium/Olive✊🏽</option>
+                        <option value="Brown">Brown✊🏾</option>
+                        <option value="Deep">Deep✊🏿</option>
+                    </select>
+                </div>
+    
+                <!-- Question 4 -->
+                <div class="quiz-question">
+                    <label for="hair-color"><b>4. How would you describe the base color of your hair?</b></label>
+                    <select id="hair-color" name="hair-color">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="Light">Light</option>
+                        <option value="Dark">Dark</option>
+                    </select>
+                </div>
+    
+                <!-- Question 5 -->
+                <div class="quiz-question">
+                    <label for="occasion"><b>5. What occasion are you shopping for?</b></label>
+                    <select id="occasion" name="occasion">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="Traditional">Traditional</option>
+                        <option value="Office/Formal">Office/Formal</option>
+                        <option value="Party/Date Night">Party/Date Night</option>
+                    </select>
+                </div>
+    
+                <!-- Submit Button -->
+                <div class="quiz-submit">
+                    <button type="submit">See My Style Match 🌟</button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+    <div id="output"></div>
+
+    <script src="newjs.js"></script>
+
+    <style>
+        /* Styling for the #output div */
+#output {
+    background-color: rgb(255, 255, 224);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling for the h2 (Heading) */
+#output h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(9, 45, 9);
+    margin-top: 20px;
+}
+
+/* Styling for the p (Description) */
+#output p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: rgb(9, 45, 9);
+    margin: 10px 0;
+}
+
+/* Styling for the h3 (Sub-Headings) */
+#output h3 {
+    font-size: 1.8rem;
+    color: rgb(9, 45, 9);
+    margin-top: 20px;
+}
+
+/* Strong text inside p for important details */
+#output p strong {
+    font-weight: bold;
+    color: rgb(9, 45, 9);
+}
+
+/* Styling the Color Palette section */
+#output p br {
+    margin-bottom: 10px;
+}
+
+/* Styling the Color Palette */
+#output p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Styling for the Outfit Suggestions section */
+#output p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Border separating the Color Palette from Outfit Suggestions */
+#output h3 + p {
+    border-top: 2px solid #eee;
+    padding-top: 15px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #output h2 {
+        font-size: 2rem;
+    }
+
+    #output h3 {
+        font-size: 1.5rem;
+    }
+
+    #output p {
+        font-size: 1rem;
+    }
+}
+
+    </style>
+    
+    <!-- Footer Section -->
+    <footer>
+        <b>© 2025 StyleNarrative. All Rights Reserved.</b>
+    </footer>
+    
